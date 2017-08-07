@@ -19,7 +19,7 @@ app.all('*', function (req, res, next) {
   next();
 });
 
-app.use(express.static(path.resolve("dist")));
+app.use(express.static(path.resolve("../dist")));
 
 let sreq;
 app.use(function (req, res, next) {
